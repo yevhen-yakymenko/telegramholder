@@ -1,4 +1,17 @@
 //colors
+//text #483EB3 #827EA7 #FFFFFF #47408D #4B42B0 #47408D #8380A0
+//title #0B0451
+//border #483EB3 #E1E1E1
+//btnbg #483EB3
+//icon #201E8B #4E45AE
+//iconbg #4C42AF #FBFCFF
+$heder-text: #483eb3;
+$hero-title: #483eb3;
+$hero-text: #827ea7;
+$main-btn-bg: #483eb3;
+$main-borger: #483eb3;
+$secondary-border: #e1e1e1;
+
 $main-text: #212121;
 $sec-text: #757575;
 $text-accent: #2196f3;
@@ -13,8 +26,7 @@ $modal-overlay: rgba(0, 0, 0, 0.2);
 $card-overlay: rgba(33, 150, 243, 0.9);
 
 //fonts
-$primary: 'Roboto', sans-serif;
-$secondary: 'Raleway', sans-serif;
+$primary: 'Inter', sans-serif;
 
 //media
 $mobile: 30rem;

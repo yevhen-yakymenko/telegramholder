@@ -1,5 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
 html {
   width: 100vw;
   height: 100%;
@@ -13,7 +15,7 @@ body {
   height: 100%;
   font-family: $primary;
   font-weight: 400;
-  color: $main-text;
+  // color: $main-text;
   background-color: $main-bg;
 
   &.modal-open {
@@ -74,9 +76,9 @@ img {
 
 .container {
   margin: 0 auto;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  max-width: 75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 82.5rem;
 }
 
 .title {
