@@ -1,0 +1,241 @@
+.main__footer {
+  padding-top: 2.625rem;
+  padding-bottom: 1.25rem;
+
+  color: $white-text;
+  fill: currentColor;
+  background: $footer-bg;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 4.0625rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 5.625rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.footer__wrapper {
+}
+
+.footer__title-wrapper {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.footer__title {
+  font-size: 0.875rem;
+  line-height: 87.5%; /* 14/16 */
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  @media screen and (min-width: $tablet) {
+    gap: 10px;
+  }
+
+  @media screen and (min-width: $pc) {
+    gap: 12px;
+  }
+}
+
+.footer__social-item {
+}
+
+.footer__social-link {
+  display: flex;
+
+  color: $white-text;
+  fill: currentColor;
+
+  transition: color $main-trn;
+
+  &:hover {
+    color: $text-accent;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  @media screen and (min-width: $pc) {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  & > svg {
+    @media screen and (min-width: $tablet) {
+      width: 1.125rem;
+      height: 1.125rem;
+    }
+
+    @media screen and (min-width: $pc) {
+      width: 1.3125rem;
+      height: 1.3125rem;
+    }
+  }
+}
+
+.footer__nav {
+  margin-bottom: 6.25rem;
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  @media screen and (min-width: $pc) {
+    gap: 2rem;
+  }
+}
+
+.footer__nav-item {
+  @media screen and (min-width: $tablet) {
+    max-width: 13.75rem;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $pc) {
+    max-width: 16.25rem;
+  }
+
+  & > div {
+    margin-bottom: 18px;
+
+    @media screen and (max-width: calc($tablet - 0.05px)) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      transition: color $main-trn;
+
+      &:hover {
+        color: $text-accent;
+      }
+
+      cursor: pointer;
+    }
+
+    & > svg {
+      transition: transform $main-trn;
+
+      &.show {
+        transform: rotate(180deg);
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0.75rem;
+
+      & > svg {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: $pc) {
+      margin-bottom: 0.875rem;
+    }
+  }
+}
+
+.footer__item-title {
+  font-weight: 500;
+  font-size: 1.3125rem;
+  line-height: 156.25%; /* 25/16 */
+
+  @media screen and (min-width: $tablet) {
+    font-size: 1.125rem;
+    line-height: 137.5%; /* 22/16 */
+  }
+
+  @media screen and (min-width: $pc) {
+    font-size: 1.375rem;
+    line-height: 168.75%; /* 27/16 */
+  }
+}
+
+.footer__sub-list {
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  transition: display $main-trn;
+
+  &.show {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.footer__sub-item {
+}
+
+.footer__sub-link {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 106.25%; /* 17/16 */
+
+  transition: color $main-trn;
+
+  &:hover {
+    color: #0d144e;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    font-size: 0.75rem;
+    line-height: 114.285714%; /* 16/14 */
+  }
+
+  @media screen and (min-width: $pc) {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+
+    font-size: 0.875rem;
+    line-height: 106.25%; /* 17/16 */
+  }
+}
+
+.sub-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  line-height: 2rem;
+  text-align: center;
+
+  @media screen and (min-width: $pc) {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
